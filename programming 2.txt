@@ -1,0 +1,12 @@
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+df=pd.read_csv("C:/Users/Administrator/Desktop/archive (4)/mtcars.csv")
+x=df.mpg
+sns.boxplot(df['mpg'])
+print(np.min(df.mpg))
+print(np.max(df.mpg))
+print(np.std(df.mpg))
+print(np.mean(df.mpg))
+print(np.median(df.mpg))
